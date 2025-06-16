@@ -25,90 +25,91 @@ let step = 0;
 let buy = 0;
 
 function preload() {
-img = loadImage("/opp/monitor2.png");
-bgImg = loadImage("/opp/bg2.png");
-logoImg = loadImage("/opp/logo3.png");
-bgImg2 = loadImage("/opp/temu.png");
+img = loadImage("./monitor2.png");
+bgImg = loadImage("./bg2.png");
+logoImg = loadImage("./logo3.png");
+bgImg2 = loadImage("./temu.png");
 
-imageMap["한정판 오리 마이크"] = loadImage("/opp/duckmic.png");
-imageMap["DIY 오리 마이크"] = loadImage("/opp/duckmic.png");
-imageMap["메타버스 호환 오리 마이크"] = loadImage("/opp/duckmic.png");
-imageMap["NFC 장착 오리 마이크"] = loadImage("/opp/duckmic.png");
+imageMap["한정판 오리 마이크"] = loadImage("./duckmic.png");
+imageMap["DIY 오리 마이크"] = loadImage("./duckmic.png");
+imageMap["메타버스 호환 오리 마이크"] = loadImage("./duckmic.png");
+imageMap["NFC 장착 오리 마이크"] = loadImage("./duckmic.png");
 
-imageMap["한정판 오리 모자"] = loadImage("/opp/duckcap.png");
-imageMap["DIY 오리 모자"] = loadImage("/opp/duckcap.png");
-imageMap["메타버스 호환 오리 모자"] = loadImage("/opp/duckcap.png");
-imageMap["NFC 장착 오리 모자"] = loadImage("/opp/duckcap.png");
+imageMap["한정판 오리 모자"] = loadImage("./duckcap.png");
+imageMap["DIY 오리 모자"] = loadImage("./duckcap.png");
+imageMap["메타버스 호환 오리 모자"] = loadImage("./duckcap.png");
+imageMap["NFC 장착 오리 모자"] = loadImage("./duckcap.png");
 
-imageMap["한정판 오리 물병"] = loadImage("/opp/duckcup.png");
-imageMap["DIY 오리 물병"] = loadImage("/opp/duckcup.png");
-imageMap["메타버스 호환 오리 물병"] = loadImage("/opp/duckcup.png");
-imageMap["NFC 장착 오리 물병"] = loadImage("/opp/duckcup.png");
+imageMap["한정판 오리 물병"] = loadImage("./duckcup.png");
+imageMap["DIY 오리 물병"] = loadImage("./duckcup.png");
+imageMap["메타버스 호환 오리 물병"] = loadImage("./duckcup.png");
+imageMap["NFC 장착 오리 물병"] = loadImage("./duckcup.png");
 
-imageMap["한정판 오리 조명"] = loadImage("/opp/ducklamp.png");
-imageMap["DIY 오리 조명"] = loadImage("/opp/ducklamp.png");
-imageMap["메타버스 호환 오리 조명"] = loadImage("/opp/ducklamp.png");
-imageMap["NFC 장착 오리 조명"] = loadImage("/opp/ducklamp.png");
+imageMap["한정판 오리 조명"] = loadImage("./ducklamp.png");
+imageMap["DIY 오리 조명"] = loadImage("./ducklamp.png");
+imageMap["메타버스 호환 오리 조명"] = loadImage("./ducklamp.png");
+imageMap["NFC 장착 오리 조명"] = loadImage("./ducklamp.png");
 
-imageMap["한정판 연필 조명"] = loadImage("/opp/pencillamp.png");
-imageMap["DIY 연필 조명"] = loadImage("/opp/pencillamp.png");
-imageMap["메타버스 호환 연필 조명"] = loadImage("/opp/pencillamp.png");
-imageMap["NFC 장착 연필 조명"] = loadImage("/opp/pencillamp.png");
+imageMap["한정판 연필 조명"] = loadImage("./pencillamp.png");
+imageMap["DIY 연필 조명"] = loadImage("./pencillamp.png");
+imageMap["메타버스 호환 연필 조명"] = loadImage("./pencillamp.png");
+imageMap["NFC 장착 연필 조명"] = loadImage("./pencillamp.png");
 
-imageMap["한정판 연필 마이크"] = loadImage("/opp/pencilmic.png");
-imageMap["DIY 연필 마이크"] = loadImage("/opp/pencilmic.png");
-imageMap["메타버스 호환 연필 마이크"] = loadImage("/opp/pencilmic.png");
-imageMap["NFC 장착 연필 마이크"] = loadImage("/opp/pencilmic.png");
+imageMap["한정판 연필 마이크"] = loadImage("./pencilmic.png");
+imageMap["DIY 연필 마이크"] = loadImage("./pencilmic.png");
+imageMap["메타버스 호환 연필 마이크"] = loadImage("./pencilmic.png");
+imageMap["NFC 장착 연필 마이크"] = loadImage("./pencilmic.png");
 
-imageMap["한정판 연필 모자"] = loadImage("/opp/pencilcap.png");
-imageMap["DIY 연필 모자"] = loadImage("/opp/pencilcap.png");
-imageMap["메타버스 호환 연필 모자"] = loadImage("/opp/pencilcap.png");
-imageMap["NFC 장착 연필 모자"] = loadImage("/opp/pencilcap.png");
+imageMap["한정판 연필 모자"] = loadImage("./pencilcap.png");
+imageMap["DIY 연필 모자"] = loadImage("./pencilcap.png");
+imageMap["메타버스 호환 연필 모자"] = loadImage("./pencilcap.png");
+imageMap["NFC 장착 연필 모자"] = loadImage("./pencilcap.png");
 
-imageMap["한정판 연필 물병"] = loadImage("/opp/pencilcup.png");
-imageMap["DIY 연필 물병"] = loadImage("/opp/pencilcup.png");
-imageMap["메타버스 호환 연필 물병"] = loadImage("/opp/pencilcup.png");
-imageMap["NFC 장착 연필 물병"] = loadImage("/opp/pencilcup.png");
+imageMap["한정판 연필 물병"] = loadImage("./pencilcup.png");
+imageMap["DIY 연필 물병"] = loadImage("./pencilcup.png");
+imageMap["메타버스 호환 연필 물병"] = loadImage("./pencilcup.png");
+imageMap["NFC 장착 연필 물병"] = loadImage("./pencilcup.png");
 
-imageMap["한정판 의자 물병"] = loadImage("/opp/ccup.png");
-imageMap["DIY 의자 물병"] = loadImage("/opp/ccup.png");
-imageMap["메타버스 호환 의자 물병"] = loadImage("/opp/ccup.png");
-imageMap["NFC 장착 의자 물병"] = loadImage("/opp/ccup.png");
+imageMap["한정판 의자 물병"] = loadImage("./ccup.png");
+imageMap["DIY 의자 물병"] = loadImage("./ccup.png");
+imageMap["메타버스 호환 의자 물병"] = loadImage("./ccup.png");
+imageMap["NFC 장착 의자 물병"] = loadImage("./ccup.png");
 
-imageMap["한정판 의자 마이크"] = loadImage("/opp/cmic.png");
-imageMap["DIY 의자 마이크"] = loadImage("/opp/cmic.png");
-imageMap["메타버스 호환 의자 마이크"] = loadImage("/opp/cmic.png");
-imageMap["NFC 장착 의자 마이크"] = loadImage("/opp/cmic.png");
+imageMap["한정판 의자 마이크"] = loadImage("./cmic.png");
+imageMap["DIY 의자 마이크"] = loadImage("./cmic.png");
+imageMap["메타버스 호환 의자 마이크"] = loadImage("./cmic.png");
+imageMap["NFC 장착 의자 마이크"] = loadImage("./cmic.png");
 
-imageMap["한정판 의자 조명"] = loadImage("/opp/clamp.png");
-imageMap["DIY 의자 조명"] = loadImage("/opp/clamp.png");
-imageMap["메타버스 호환 의자 조명"] = loadImage("/opp/clamp.png");
-imageMap["NFC 장착 의자 조명"] = loadImage("/opp/clamp.png");
+imageMap["한정판 의자 조명"] = loadImage("./clamp.png");
+imageMap["DIY 의자 조명"] = loadImage("./clamp.png");
+imageMap["메타버스 호환 의자 조명"] = loadImage("./clamp.png");
+imageMap["NFC 장착 의자 조명"] = loadImage("./clamp.png");
 
-imageMap["한정판 의자 모자"] = loadImage("/opp/ccap.png");
-imageMap["DIY 의자 모자"] = loadImage("/opp/ccap.png");
-imageMap["메타버스 호환 의자 모자"] = loadImage("/opp/ccap.png");
-imageMap["NFC 장착 의자 모자"] = loadImage("/opp/ccap.png");
+imageMap["한정판 의자 모자"] = loadImage("./ccap.png");
+imageMap["DIY 의자 모자"] = loadImage("./ccap.png");
+imageMap["메타버스 호환 의자 모자"] = loadImage("./ccap.png");
+imageMap["NFC 장착 의자 모자"] = loadImage("./ccap.png");
 
-imageMap["한정판 우산 모자"] = loadImage("/opp/umcap.png");
-imageMap["DIY 우산 모자"] = loadImage("/opp/umcap.png");
-imageMap["메타버스 호환 우산 모자"] = loadImage("/opp/umcap.png");
-imageMap["NFC 장착 우산 모자"] = loadImage("/opp/umcap.png");
+imageMap["한정판 우산 모자"] = loadImage("./umcap.png");
+imageMap["DIY 우산 모자"] = loadImage("./umcap.png");
+imageMap["메타버스 호환 우산 모자"] = loadImage("./umcap.png");
+imageMap["NFC 장착 우산 모자"] = loadImage("./umcap.png");
 
-imageMap["한정판 우산 마이크"] = loadImage("/opp/ummic.png");
-imageMap["DIY 우산 마이크"] = loadImage("/opp/ummic.png");
-imageMap["메타버스 호환 우산 마이크"] = loadImage("/opp/ummic.png");
-imageMap["NFC 장착 우산 마이크"] = loadImage("/opp/ummic.png");
+imageMap["한정판 우산 마이크"] = loadImage("./ummic.png");
+imageMap["DIY 우산 마이크"] = loadImage("./ummic.png");
+imageMap["메타버스 호환 우산 마이크"] = loadImage("./ummic.png");
+imageMap["NFC 장착 우산 마이크"] = loadImage("./ummic.png");
 
-imageMap["한정판 우산 물병"] = loadImage("/opp/umcup.png");
-imageMap["DIY 우산 물병"] = loadImage("/opp/umcup.png");
-imageMap["메타버스 호환 우산 물병"] = loadImage("/opp/umcup.png");
-imageMap["NFC 장착 우산 물병"] = loadImage("/opp/umcup.png");
+imageMap["한정판 우산 물병"] = loadImage("./umcup.png");
+imageMap["DIY 우산 물병"] = loadImage("./umcup.png");
+imageMap["메타버스 호환 우산 물병"] = loadImage("./umcup.png");
+imageMap["NFC 장착 우산 물병"] = loadImage("./umcup.png");
 
-imageMap["한정판 우산 조명"] = loadImage("/opp/umlamp.png");
-imageMap["DIY 우산 조명"] = loadImage("/opp/umlamp.png");
-imageMap["메타버스 호환 우산 조명"] = loadImage("/opp/umlamp.png");
-imageMap["NFC 장착 우산 조명"] = loadImage("/opp/umlamp.png");
+imageMap["한정판 우산 조명"] = loadImage("./umlamp.png");
+imageMap["DIY 우산 조명"] = loadImage("./umlamp.png");
+imageMap["메타버스 호환 우산 조명"] = loadImage("./umlamp.png");
+imageMap["NFC 장착 우산 조명"] = loadImage("./umlamp.png");
+
 
 }
 
